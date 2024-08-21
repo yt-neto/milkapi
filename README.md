@@ -2,6 +2,7 @@
 
 <div align="center">
   <img src="#" width="70" height="70" />
+  <img src="#" width="70" height="70" />
 </div>
 
 <h4 align="center">This a project to control milk collection in the region </h4>
@@ -15,7 +16,6 @@
     <a href="#Conceptual_Model">Conceptual model</a> •
     <a href="#Api_resources">Api resources</a> •
     <a href="#Folder_Architecture">Folder Architecture BackEnd</a> •
-    <a href="#Folder_Architecture_Front">Folder Architecture Web App</a> •
     <a href="#Running_Application">Running application</a> •
     <a href="#About_the_Author">About the Author</a> •
     <a href="https://github.com/neto-works/estocaria_ponto_net/blob/main/LICENSE">Licensing</a>
@@ -34,20 +34,20 @@
 
 ## Folder_Architecture
 ```
-Solução + P.api.src
-            ├     └─  main.java.ofc.api
-            ├                    └──────────  Config : all configs, springSecurity, Swagger ...
-            ├                    └──────────  Controllers : all controllers, interfaces, Dtos ...
-            ├                    └──────────  Entities  : models for aplication.
-            ├                    └──────────  Repositories : Repositories, JPa base , generics ...
-            ├                    └──────────  Services : all Services, generics and interfaces ...
-            ├  
-            └───────  main.resources   
-            ├                    └──────────  aplication.properties
-            ├  
-            └───────  test
-            ├──  docher-compose.yml
-            └──  pom.xml : all dependecies
+api.src
+  ├  └─  main.java.ofc.api
+  ├                    └──────────  Config : all configs, springSecurity, Swagger ...
+  ├                    └──────────  Controllers : all controllers, interfaces, Dtos ...
+  ├                    └──────────  Entities  : models for aplication.
+  ├                    └──────────  Repositories : Repositories, JPa base , generics ...
+  ├                    └──────────  Services : all Services, generics and interfaces ...
+  ├  
+  └───────  main.resources   
+  ├                    └──────────  aplication.properties
+  ├  
+  └───────  test
+  ├──  docher-compose.yml
+  └──  pom.xml : all dependecies
 ```
 ## Conceptual_Model
 
@@ -69,7 +69,7 @@ Solução + P.api.src
   POST /api/auth/register
  ```
  ```http
-  POST /api/Auth/refresh-token
+  POST /api/auth/refresh-token
  ```
 - Authorize Policy _"QuemPuderGerenciar"(Gerente)_
 
@@ -177,27 +177,12 @@ Solução + P.api.src
   GET /api/recolhimentos/periodo
  ```
 
-## Folder_Architecture_Front
-```
-milkApp_expo_RN.
-              ├── assets
-              ├── src.
-              ├         └──────────  screens -- all pages
-              ├         └──────────  components /  all components.tsx
-              ├         └──────────  contexts / all contexts.tsx
-              ├         └──────────  routes / all routes tipes, drawer, tab and stack
-              └── package.
-              └── outher files ...
-```
-
 ## Prerequisites
+
 - SDKMAN for manager version jdk
-- JDK 22
+- JDK 17
 - Docker and Docke-compose plugin
-- Nodejs
- ```
-   
- ```
+
 ## Running_Application
 
 - create the bank:
@@ -207,14 +192,16 @@ milkApp_expo_RN.
 
 - install dependencies:
  ```
-    
+    mvn install
+
  ```
 
 - to execute:
- ```
-   
- ```
- - http://localhost:8080/swagger-ui/index.html?urls.primaryName=public
+```
+  java -jar target/nome_projeto-1.0-SNAPSHOT.jar
+```
+
+- http://localhost:8080/swagger-ui/index.html?urls.primaryName=public
 
 ## Test the application using postman
 

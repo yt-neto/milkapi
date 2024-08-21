@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "Api_Milk",
+  "name": "api_milk",
   "type": "collection",
   "ignore": [
     "node_modules",
