@@ -1,8 +1,8 @@
 ## Project Milk Optimization
 
 <div align="center">
-  <img src="#" width="70" height="70" />
-  <img src="#" width="70" height="70" />
+  <img src="https://github.com/yt-neto/milkapi/blob/main/docs/img/img1.png" width="250" height="250" />
+  <img src="https://github.com/yt-neto/milkapi/blob/main/docs/img/img2.png" width="250" height="250" />
 </div>
 
 <h4 align="center">This a project to control milk collection in the region </h4>
@@ -13,7 +13,6 @@
 
 <p align="center">
     <a href="#Technologies_Used">Technologies Used</a> •
-    <a href="#Conceptual_Model">Conceptual model</a> •
     <a href="#Api_resources">Api resources</a> •
     <a href="#Folder_Architecture">Folder Architecture BackEnd</a> •
     <a href="#Running_Application">Running application</a> •
@@ -49,13 +48,10 @@ api.src
   ├──  docher-compose.yml
   └──  pom.xml : all dependecies
 ```
-## Conceptual_Model
-
-<img src="" />
 
 ## Bank_Model
 
-<img src="" />
+<img src="https://github.com/yt-neto/milkapi/blob/main/docs/diagramas/banco.png" />
 
 ## Api_resources v1
 
