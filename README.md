@@ -8,7 +8,11 @@
 <h4 align="center">This a project to control milk collection in the region </h4>
 
 <p align="center">
-  [Project's badges]
+<img src="https://sonarcloud.io/api/project_badges/measure?project=yt-neto_milkapi&metric=alert_status">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=yt-neto_milkapi&metric=coverage">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=yt-neto_milkapi&metric=duplicated_lines_density">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=yt-neto_milkapi&metric=security_rating">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=yt-neto_milkapi&metric=sqale_index">
 </p>
 
 <p align="center">

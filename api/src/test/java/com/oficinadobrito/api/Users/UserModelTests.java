@@ -25,7 +25,7 @@ class UserModelTests {
         user = new Usuario();
         user.setUsuarioId(UUID.randomUUID().toString());
         novo = "Caleby";
-    };
+    }
 
     @DisplayName("User must be an implementation and userdetail")
     @Test
@@ -105,7 +105,7 @@ class UserModelTests {
         //When  - Act
       
         //Then  - Assert
-        Assertions.assertEquals(4, UserRole.values().length, ()-> "error the total number of values the UserRole enumeration must be 4: ADMIN, USER, VENDEDOR, GERENTE");
+        Assertions.assertEquals(4, UserRole.values().length, () -> "error the total number of values the UserRole enumeration must be 4: ADMIN, USER, VENDEDOR, GERENTE");
         Assertions.assertDoesNotThrow(()->UserRole.valueOf("ADMIN"), () -> "UserRole does not contain ADMIN");
         Assertions.assertDoesNotThrow(()->UserRole.valueOf("USER"), () -> "UserRole does not contain USER");
         Assertions.assertDoesNotThrow(()->UserRole.valueOf("VENDEDOR"),() -> "UserRole does not contain VENDEDOR");
